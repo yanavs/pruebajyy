@@ -1,0 +1,107 @@
+
+.container{
+    max-width: 90%;
+    margin: 60px auto;
+}
+.container h1,
+.container p{
+    color:rgb(0, 0, 0);
+    text-align:center;
+    padding:20px 0;    
+}
+
+.container h1{
+    font-size: 4em;
+}
+
+.container p{
+    font-size: 2em;
+}
+.center-abs{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.charts{
+    display: flex;
+    
+}
+.chart {
+    position: relative;
+    width: 25%;
+    height: 260px;
+}
+
+.chart h3 {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.chart svg {
+    z-index: 2;
+}
+
+.circle {
+   width:9.4rem;
+    height: 9.4rem;
+    border-radius: 50%;
+    z-index: 1;
+    border: 10px #d1b99e solid;
+}
+
+span.text {
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    font-size: 4em;
+    font-weight: 700;
+    color:#a89863;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.outer {
+    fill: transparent;
+    stroke: #cc9933;
+    stroke-width: 10;
+    /* 2 * RadioCircle* Pi = stroke-dasharray */
+    /* 2 * 70 * 3.1415 = 439.81 */
+    stroke-dasharray: 439; /* set in js file */
+    transform: rotate(270deg) translate(-150px, 0);
+}
+
+#countdown-content p{
+    text-align: center;
+    font-size: 2em;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 480px) and (max-width: 768px) { 
+    .chart{
+        width: 10%;
+    }
+}
+@media (max-width: 480px) { 
+    .container{
+        width: 80%;
+    }
+    .chart{
+        width: 80%;
+    }
+    .circle{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    span.text{
+        width: 20%;
+    }
+
+}
