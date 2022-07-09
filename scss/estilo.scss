@@ -14,26 +14,25 @@ $dorado: #d2ae6d;
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 
-    .principal {
-        img {
-            width: 100%;
-            margin: 0px;
-            margin-bottom: 2rem;
-        }
+    img {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 2rem;
+    }
 
-        .headerdesktop {
-            display: none;
-        }
+    .headerdesktop {
+        display: none;
+    }
 
-        .nombres {
-            position: absolute;
-            top: 20%;
-            right: 45%;
-            width: 50%;
-        }
+    .nombres {
+        position: absolute;
+        top: 20%;
+        right: 45%;
+        width: 50%;
+    }
 
 
     .abajo {
@@ -44,25 +43,19 @@ header {
         margin-bottom: 3.5rem;
         text-align: center;
     }
-    }
-
-    .noscasamos {
-        text-align: center;
-
-        img {
-
-            top: 20%;
-            width: 80%;
-            text-align: center;
-
-        }
-    }
-
 }
 
+.noscasamos {
+    text-align: center;
 
+    img {
 
+        top: 20%;
+        width: 80%;
+        text-align: center;
 
+    }
+}
 
 .celebremos {
     vertical-align: middle;
@@ -190,6 +183,10 @@ header {
     img {
         width: 100%;
     }
+
+    .instadesktop {
+        display: none;
+    }
 }
 
 .container {
@@ -279,6 +276,16 @@ header {
 
         .nombres {
             width: 30%;
+        }
+    }
+
+    .instagram {
+        .instadesktop {
+            display: block;
+        }
+
+        .instacel {
+            display: none;
         }
     }
 }
