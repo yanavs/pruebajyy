@@ -17,23 +17,23 @@ header {
     height: 100vh;
     position: relative;
 
-    img {
-        width: 100%;
-        margin: 0px;
-        margin-bottom: 2rem;
-    }
+    .principal {
+        img {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 2rem;
+        }
 
-    .headerdesktop {
-        display: none;
-    }
+        .headerdesktop {
+            display: none;
+        }
 
-    .nombres {
-        position: absolute;
-        top: 20%;
-        right: 45%;
-        width: 50%;
-    }
-
+        .nombres {
+            position: absolute;
+            top: 20%;
+            right: 45%;
+            width: 50%;
+        }
 
 
     .abajo {
@@ -44,7 +44,8 @@ header {
         margin-bottom: 3.5rem;
         text-align: center;
     }
-
+    }
+    
     .noscasamos {
         text-align: center;
 
@@ -159,8 +160,8 @@ header {
 
 .musica {
     @extend .celebremos;
-    background-color:white;
-padding-top: 2rem;
+    background-color: white;
+    padding-top: 2rem;
 
 
     .btn-primary {
@@ -168,11 +169,13 @@ padding-top: 2rem;
         color: white;
         border: #74610d;
         box-shadow: none;
+
         &:disabled {
             border: #74610d;
             box-shadow: none;
             background-color: #74610d;
         }
+
         &:active {
             border: #74610d;
             box-shadow: none;
@@ -201,9 +204,10 @@ padding-top: 2rem;
         margin-top: 1rem;
         margin-bottom: 0px;
     }
-    img{
-width: 50%;
-margin: 0 auto;
+
+    img {
+        width: 50%;
+        margin: 0 auto;
     }
 
     .nosotros {
