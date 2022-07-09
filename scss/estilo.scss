@@ -156,12 +156,14 @@ header {
     background-color: white;
     padding-top: 2rem;
 
-
-    .btn-primary {
-        background-color: #d2ae6d;
+    .button {
+        background-color: #d3c2a4;
         color: white;
         border: #74610d;
         box-shadow: none;
+        text-decoration: none;
+        padding: 10px 40px;
+        border-radius: 5px;
 
         &:disabled {
             border: #74610d;
@@ -173,6 +175,10 @@ header {
             border: #74610d;
             box-shadow: none;
         }
+    }
+
+    .abajo {
+        margin-top: 40%;
     }
 }
 

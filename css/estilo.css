@@ -132,22 +132,29 @@ header .abajo {
   padding-top: 2rem;
 }
 
-.musica .btn-primary {
-  background-color: #d2ae6d;
+.musica .button {
+  background-color: #d3c2a4;
   color: white;
   border: #74610d;
   box-shadow: none;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 5px;
 }
 
-.musica .btn-primary:disabled {
+.musica .button:disabled {
   border: #74610d;
   box-shadow: none;
   background-color: #74610d;
 }
 
-.musica .btn-primary:active {
+.musica .button:active {
   border: #74610d;
   box-shadow: none;
+}
+
+.musica .abajo {
+  margin-top: 40%;
 }
 
 .instagram {
