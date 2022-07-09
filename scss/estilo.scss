@@ -14,20 +14,25 @@ $dorado: #d2ae6d;
 }
 
 header {
-    height: 100vh;
-    position:relative;
+    min-height: 100vh;
+    position: relative;
+
     img {
         width: 100%;
         margin: 0px;
         margin-bottom: 2rem;
     }
 
-.nombres{
-    position: absolute;
-    top: 20%;
-    right: 45%;
-    width: 50%;
-}
+    .headerdesktop {
+        display: none;
+    }
+
+    .nombres {
+        position: absolute;
+        top: 20%;
+        right: 45%;
+        width: 50%;
+    }
 
 
 
@@ -42,13 +47,13 @@ header {
 
     .noscasamos {
         text-align: center;
-    
+
         img {
-    
+
             top: 20%;
             width: 80%;
             text-align: center;
-    
+
         }
     }
 
@@ -62,7 +67,7 @@ header {
     vertical-align: middle;
     background-color: #d3c2a4;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
 
     .abajo {
         display: block;
@@ -71,7 +76,7 @@ header {
         margin-top: 1rem;
         margin-bottom: 3.2rem;
         text-align: center;
-        
+
     }
 
     img {
@@ -117,36 +122,64 @@ header {
             border: $tono-oscuro
         }
     }
-    
+
 }
 
-.dresscode {
-    @extend .celebremos;
-    background-color: white;
-    height: auto;
-}
-
-.regalo {
+.group {
     @extend .celebremos;
 
-    .modal-body {
-        ul {
-            text-align: center;
-            margin: 0px auto;
+
+    .dresscode {
+
+        background-color: white;
+
+    }
+
+    .regalo {
+
+        .modal-body {
+            ul {
+                text-align: center;
+                margin: 0px auto;
+            }
         }
-    }
 
-    .modal-header {
-        background-color: #d3c2a4;
-    }
-
-    .modal-footer {
-        button {
+        .modal-header {
             background-color: #d3c2a4;
-            color: white;
+        }
+
+        .modal-footer {
+            button {
+                background-color: #d3c2a4;
+                color: white;
+            }
         }
     }
 }
+
+.musica {
+    @extend .celebremos;
+    background-color:white;
+padding-top: 2rem;
+
+
+    .btn-primary {
+        background-color: #d2ae6d;
+        color: white;
+        border: #74610d;
+        box-shadow: none;
+        &:disabled {
+            border: #74610d;
+            box-shadow: none;
+            background-color: #74610d;
+        }
+        &:active {
+            border: #74610d;
+            box-shadow: none;
+        }
+    }
+}
+
 
 .instagram {
     background-color: white;
@@ -158,26 +191,33 @@ header {
 
 .container {
     text-align: center;
+    height: auto;
+
 
     h1 {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
         padding: 0.5rem;
         margin-top: 1rem;
+        margin-bottom: 0px;
+    }
+    img{
+width: 50%;
+margin: 0 auto;
     }
 
     .nosotros {
         display: flex;
         flex-wrap: wrap;
-        height: auto;
-        @extend .celebremos;
         background-color: white;
+        height: auto;
 
         img {
             width: 6rem;
             padding: 0.5rem;
             margin: 0px auto;
             transition: transform .2s;
+            height: auto;
 
             &:hover {
                 transform: scale(2);
@@ -221,6 +261,20 @@ header {
                 margin: 3rem;
 
             }
+        }
+    }
+
+    header {
+        .headermovil {
+            display: none;
+        }
+
+        .headerdesktop {
+            display: block;
+        }
+
+        .nombres {
+            width: 30%;
         }
     }
 }

@@ -9,7 +9,7 @@
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -17,6 +17,10 @@ header img {
   width: 100%;
   margin: 0px;
   margin-bottom: 2rem;
+}
+
+header .headerdesktop {
+  display: none;
 }
 
 header .nombres {
@@ -45,14 +49,14 @@ header .noscasamos img {
   text-align: center;
 }
 
-.celebremos, .dresscode, .regalo, .container .nosotros {
+.celebremos, .group, .musica {
   vertical-align: middle;
   background-color: #d3c2a4;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.celebremos .abajo, .dresscode .abajo, .regalo .abajo, .container .nosotros .abajo {
+.celebremos .abajo, .group .abajo, .musica .abajo {
   display: block;
   width: 3rem;
   margin: 0px auto;
@@ -61,17 +65,17 @@ header .noscasamos img {
   text-align: center;
 }
 
-.celebremos img, .dresscode img, .regalo img, .container .nosotros img {
+.celebremos img, .group img, .musica img {
   width: 8rem;
   margin: 2rem;
 }
 
-.celebremos h1, .dresscode h1, .regalo h1, .container .nosotros h1 {
+.celebremos h1, .group h1, .musica h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
 
-.celebremos p, .dresscode p, .regalo p, .container .nosotros p {
+.celebremos p, .group p, .musica p {
   padding: 1rem;
   color: #74610d;
   font-family: 'Montserrat', sans-serif;
@@ -79,7 +83,7 @@ header .noscasamos img {
   margin: 0px;
 }
 
-.celebremos .btn, .dresscode .btn, .regalo .btn, .container .nosotros .btn {
+.celebremos .btn, .group .btn, .musica .btn {
   background-color: white;
   opacity: 90%;
   color: #74610d;
@@ -88,40 +92,62 @@ header .noscasamos img {
   margin-bottom: 2rem;
 }
 
-.celebremos .btn:focus, .dresscode .btn:focus, .regalo .btn:focus, .container .nosotros .btn:focus {
+.celebremos .btn:focus, .group .btn:focus, .musica .btn:focus {
   background-color: white;
   color: #74610d;
 }
 
-.celebremos .btn:active, .dresscode .btn:active, .regalo .btn:active, .container .nosotros .btn:active {
-  background-color: white;
-  color: #74610d;
-  border: #74610d;
-}
-
-.celebremos .btn:hover, .dresscode .btn:hover, .regalo .btn:hover, .container .nosotros .btn:hover {
+.celebremos .btn:active, .group .btn:active, .musica .btn:active {
   background-color: white;
   color: #74610d;
   border: #74610d;
 }
 
-.dresscode {
+.celebremos .btn:hover, .group .btn:hover, .musica .btn:hover {
   background-color: white;
-  height: auto;
+  color: #74610d;
+  border: #74610d;
 }
 
-.regalo .modal-body ul {
+.group .dresscode {
+  background-color: white;
+}
+
+.group .regalo .modal-body ul {
   text-align: center;
   margin: 0px auto;
 }
 
-.regalo .modal-header {
+.group .regalo .modal-header {
   background-color: #d3c2a4;
 }
 
-.regalo .modal-footer button {
+.group .regalo .modal-footer button {
   background-color: #d3c2a4;
   color: white;
+}
+
+.musica {
+  background-color: white;
+  padding-top: 2rem;
+}
+
+.musica .btn-primary {
+  background-color: #d2ae6d;
+  color: white;
+  border: #74610d;
+  box-shadow: none;
+}
+
+.musica .btn-primary:disabled {
+  border: #74610d;
+  box-shadow: none;
+  background-color: #74610d;
+}
+
+.musica .btn-primary:active {
+  border: #74610d;
+  box-shadow: none;
 }
 
 .instagram {
@@ -134,6 +160,7 @@ header .noscasamos img {
 
 .container {
   text-align: center;
+  height: auto;
 }
 
 .container h1 {
@@ -141,13 +168,19 @@ header .noscasamos img {
   font-size: 1.5rem;
   padding: 0.5rem;
   margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.container img {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .container .nosotros {
   display: flex;
   flex-wrap: wrap;
-  height: auto;
   background-color: white;
+  height: auto;
 }
 
 .container .nosotros img {
@@ -155,6 +188,7 @@ header .noscasamos img {
   padding: 0.5rem;
   margin: 0px auto;
   transition: transform .2s;
+  height: auto;
 }
 
 .container .nosotros img:hover {
@@ -187,6 +221,15 @@ header .noscasamos img {
   .container .nosotros img {
     width: 16rem;
     margin: 3rem;
+  }
+  header .headermovil {
+    display: none;
+  }
+  header .headerdesktop {
+    display: block;
+  }
+  header .nombres {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
